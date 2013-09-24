@@ -6,12 +6,13 @@ extends:
 packages:
   - zlib
   - szlib
-  - python:
-      use: host-python
-  - numpy:
-      use: host-numpy
   - nose
   - launcher
   - hdf5
+  - jinja2
+  - distribute
+
+  - python:
+      use: host-python
   - mpi:
       use: host-mpi
