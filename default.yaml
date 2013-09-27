@@ -1,18 +1,17 @@
 extends:
  - urls: ['https://github.com/hashdist/hashstack2.git']
-   key: 'git:369a73dadcd437be50f386f7c24d08edc0d4748f'
-   profile: debian.yaml
+   key: 'git:5042aeaaee9841575e56ad9f673ef1585c2f5a46'
+   file: debian.yaml
 
 packages:
-  - zlib
-  - szlib
-  - nose
-  - launcher
-  - hdf5
-  - jinja2
-  - distribute
-
-  - python:
-      use: host-python
-  - mpi:
-      use: host-mpi
+  zlib:
+  szlib:
+  nose:
+  launcher:
+  hdf5:
+  jinja2:
+  distribute:
+  python:
+    use: host-python
+  mpi:
+    use: host-mpi
