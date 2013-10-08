@@ -1,6 +1,7 @@
 extends:
- - urls: ['https://github.com/hashdist/hashstack2.git']
-   key: 'git:5042aeaaee9841575e56ad9f673ef1585c2f5a46'
+ - name: hashstack
+   urls: ['https://github.com/hashdist/hashstack2.git']
+   key: 'git:e66475eb4a273c8a5b2c30bbeded8af66fdf3de3'
    file: debian.yaml
 
 packages:
@@ -12,6 +13,4 @@ packages:
   jinja2:
   distribute:
   python:
-    use: host-python
-  mpi:
-    use: host-mpi
+    host: true
