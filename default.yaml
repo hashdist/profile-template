@@ -1,6 +1,6 @@
 extends:
  - name: hashstack
-   urls: ['https://github.com/hashdist/hashstack2.git']
+   urls: ['https://github.com/hashdist/hashstack.git']
    key: 'git:e66475eb4a273c8a5b2c30bbeded8af66fdf3de3'
    file: debian.yaml
 
