@@ -1,16 +1,23 @@
 extends:
  - name: hashstack
    urls: ['https://github.com/hashdist/hashstack.git']
-   key: 'git:e66475eb4a273c8a5b2c30bbeded8af66fdf3de3'
+   key: 'git:1a97d560b12d86d8c36f8e574a1ebb3ea00067b7'
    file: debian.yaml
 
 packages:
+  blas:
+    use: host-blas
+    # alternative to system blas:
+    # use: openblas
+  mpi:
+    # On debian: apt-get install mpich
+    use: host-mpi
+    # alternative to system mpi:
+    # use: openmpi
   zlib:
-  szlib:
   nose:
   launcher:
-  hdf5:
+  numpy:
   jinja2:
-  distribute:
   python:
     host: true
